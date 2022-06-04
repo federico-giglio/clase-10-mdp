@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
+
+    a(href="/formulario.html") Formulario
+
+
+        a(href="/productos") Productos
+
+
+div(class="container")
+
+        if productos
+            table
+                thead
+                    tr
+                        th ID
+                        th title
+                        th price
+                        th thumbnail
+                tbody
+                    each product in productos
+                        tr
+                            th= product.id
+                            th= product.title
+                            td= product.price
+                            td: img(src=product.thumbnail style="max-height: 25px; max-width: auto")
+        else
+            h1 No hay productos
+
+

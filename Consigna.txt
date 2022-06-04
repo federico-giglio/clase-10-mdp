@@ -1,0 +1,56 @@
+Incorporando Handlebars
+
+Formato: link a un repositorio en Github con los tres proyectos en
+carpetas separadas. No incluir los node_modules.
+
+>> Consigna:
+1) Utilizando la misma API de productos del proyecto entregable de la
+clase anterior, construir un web server (no REST) que incorpore:
+    a) Un formulario de carga de productos en la ruta raíz (configurar la
+    ruta '/productos' para recibir el POST, y redirigir al mismo
+    formulario).
+    b) Una vista de los productos cargados (utilizando plantillas de
+    handlebars) en la ruta GET '/productos'.
+    c) Ambas páginas contarán con un botón que redirija a la otra.Incorporando Handlebars
+2) Manteniendo la misma funcionalidad reemplazar el motor de plantillas
+handlebars por pug.
+3) Manteniendo la misma funcionalidad reemplazar el motor de plantillas
+handlebars por ejs.
+4) Por escrito, indicar cuál de los tres motores de plantillas prefieres para
+tu proyecto y por qué.Incorporando Handlebars
+Formato: link a un repositorio en Github con los tres proyectos en
+carpetas separadas. No incluir los node_modules.
+>> Aspectos a incluir en el entregable:
+- Realizar las plantillas correspondientes que permitan recorrer el array de productos y
+representarlo en forma de tabla dinámica, siendo sus cabeceras el nombre de
+producto, el precio y su foto (la foto se mostrará como un imágen en la tabla)
+- En el caso de no encontrarse datos, mostrar el mensaje: 'No hay productos'.
+>> Sugerencias:
+- Utilizar iconfinder (https://www.iconfinder.com/free_icons) para obtener la url de las
+imágenes de los productos (click derecho sobre la imagen -> copiar dirección de la
+imagen)
+
+
+..........
+
+Construir web server con:
+un formulario para la carga de productos en la ruta principal '/'
+los productos cargados con handlebars en GET '/productos'
+Un boton en ambas paginas que redirija a la otra
+(ir al formulario de carga// ir a los productos)
+
+Las plantillas deben permitir:
+Loopear sobre un array  (recorrerlo)
+representarlo en forma de tabla dinámica
+y en cabecera colocar: nombre, precio y foto del producto
+
+en caso de no encontrar datos mostrar 'no hay productos'
+
+1- Crear carpeta views
+2- Armar lista de productos de handlebars en carpeta views
+3- crear index de handlebars en layouts
+4- Agregar botones de formulario y productos
+5- settear y routear pug
+6- crear lista de productos pug
+7- settear y routear ejs
+8- crear lista de productos en ejs
